@@ -1,12 +1,15 @@
 # Job Board App
+
 A simple web application which displays a list of jobs fetched from a CSV and allows users to view detailed information about each job.
 
 ## Tech Stack
+
 Frontend: React, TailwindCSS
 Backend: NextJS, NodeJS
-Deployment: TBD
+Deployment: Vercel
 
 ## Getting Started
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
@@ -27,7 +30,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-
 ## Deploy on Vercel
-TBD
 
+View the app in a production environment here: https://unibui-job-board.vercel.app/
