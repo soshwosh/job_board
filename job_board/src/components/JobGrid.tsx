@@ -1,17 +1,10 @@
 "use client";
 import Papa from "papaparse";
 import { useEffect, useState } from "react";
+import { Job } from "@/lib/types";
+import JobCard from "./JobCard";
 
-// type Job = { [key: string]: string };
-type Job = {
-  jobTitle: string;
-  companyName: string;
-  location: string;
-  description: string;
-  requirements: string;
-};
-
-export default function JobList() {
+export default function JobGrid() {
   const [data, setData] = useState<Job[]>([]);
 
   useEffect(() => {
@@ -39,14 +32,10 @@ export default function JobList() {
   console.log(data[0]);
 
   return (
-    <div>
+    <div className="m-5 grid grid-cols-1 gap-3 sm:grid-cols-3 md:m-10 md:grid-cols-4 md:gap-4">
       {data.map((job, index) => (
         <div key={index}>
-          <p>{job.jobTitle}</p>
-          <p>{job.companyName}</p>
-          <p>{job.location}</p>
-          <p>{job.description}</p>
-          <p>{job.requirements}</p>
+          <JobCard job={job}></JobCard>
         </div>
       ))}
     </div>

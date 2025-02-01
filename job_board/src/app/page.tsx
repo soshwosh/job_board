@@ -1,7 +1,5 @@
-import JobList from "@/ui/JobList";
+import JobGrid from "@/components/JobGrid";
 
 export default function Home() {
-  return (
-    <JobList />
-  );
+  return <JobGrid />;
 }
